@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoScribe - Type at the Speed of Thought</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.1/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav-container">
+        <div class="nav-brand">
+            <div class="nav-icon">
+                <div class="nav-glow"></div>
+                <i data-lucide="keyboard"></i>
+            </div>
+            <span class="nav-title">AutoScribe</span>
+            <span class="nav-badge">v1.0</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#install" class="nav-link">Install</a>
+            <a href="#usage" class="nav-link">Usage</a>
+            <a href="#hotkeys" class="nav-link">FAQ</a>
+            <a href="#download" class="nav-cta" id="nav-download-btn">Get Windows</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-card">
+                <div class="hero-content">
+                    <div class="hero-glow"></div>
+                    <div class="hero-grid">
+                        <div class="hero-text">
+                            <h1 class="hero-title">
+                                Type at the speed of <span class="gradient-text">thought</span>.
+                            </h1>
+                            <p class="hero-description">
+                                AutoScribe is a desktop tool that simulates real keyboard input across any app—perfect for testing, demos, and vaporizing repetitive typing.
+                            </p>
+                            <div class="hero-buttons">
+                                <a href="#download" class="btn btn-primary" id="primary-download-btn">
+                                    <i data-lucide="download"></i>
+                                    <span>Download for Windows</span>
+                                </a>
+                                <a href="#install" class="btn btn-secondary">
+                                    <i data-lucide="terminal"></i>
+                                    <span>Install via Python</span>
+                                </a>
+                                <span class="hero-badge">No browser extension. Native app.</span>
+                            </div>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <i data-lucide="gauge"></i>
+                                    <span>1–200 WPM</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i data-lucide="clock"></i>
+                                    <span>Human-like delays</span>
+                                </div>
+                                <div class="stat-item">
+                                    <i data-lucide="shield"></i>
+                                    <span>Emergency stop</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hero-demo">
+                            <div class="demo-card tilt-card">
+                                <div class="demo-glow demo-glow-1"></div>
+                                <div class="demo-glow demo-glow-2"></div>
+                                <div class="demo-header">
+                                    <div class="demo-status">
+                                        <i data-lucide="globe-2"></i>
+                                        <span>Target: Any App</span>
+                                    </div>
+                                    <span class="demo-badge">Live</span>
+                                </div>
+                                <div class="demo-terminal">
+                                    <div class="typing-preview">
+                                        <span class="typing-indicator"></span>
+                                        <span class="typing-text" id="typing-text"></span>
+                                        <span class="typing-cursor"></span>
+                                    </div>
+                                </div>
+                                <div class="demo-features">
+                                    <div class="feature-chip">
+                                        <i data-lucide="zap"></i>
+                                        <span>Global Hotkeys</span>
+                                    </div>
+                                    <div class="feature-chip">
+                                        <i data-lucide="cpu"></i>
+                                        <span>System-Level Events</span>
+                                    </div>
+                                    <div class="feature-chip">
+                                        <i data-lucide="mouse-pointer-2"></i>
+                                        <span>Corner Kill-Switch</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <h2 class="section-title">Engineered for power, tuned for safety</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i data-lucide="keyboard"></i>
+                        </div>
+                        <h3>Real Keyboard Simulation</h3>
+                    </div>
+                    <p>System-level key events for rock-solid input in any app.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i data-lucide="gauge"></i>
+                        </div>
+                        <h3>Adjustable Speed</h3>
+                    </div>
+                    <p>Dial from 1–200 WPM and keep it silky smooth.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>Human-like Typing</h3>
+                    </div>
+                    <p>Randomized delays and rhythm to mimic real users.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i data-lucide="shield"></i>
+                        </div>
+                        <h3>Safety First</h3>
+                    </div>
+                    <p>Global stop hotkey + mouse-to-corner emergency brake.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i data-lucide="settings"></i>
+                        </div>
+                        <h3>Global Hotkeys</h3>
+                    </div>
+                    <p>Start / Stop / Pause / Resume from anywhere.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-glow"></div>
+                    <div class="feature-header">
+                        <div class="feature-icon">
+                            <i data-lucide="globe-2"></i>
+                        </div>
+                        <h3>Universal Compatibility</h3>
+                    </div>
+                    <p>Works with Docs, Word, Notepad—anything that accepts keys.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Install Section -->
+    <section id="install" class="install-section">
+        <div class="container">
+            <h2 class="section-title">Install in two ways</h2>
+            <div class="install-grid">
+                <div class="install-card">
+                    <div class="card-header">
+                        <i data-lucide="download"></i>
+                        <h3>Direct Download</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Grab the native installer for your OS and you're off to the races.</p>
+                        <div class="download-buttons">
+                            <a href="#" class="btn btn-outline download-btn" data-os="windows">Windows (.exe)</a>
+                            <a href="#" class="btn btn-outline download-btn" data-os="mac">macOS (.dmg)</a>
+                            <a href="#" class="btn btn-outline download-btn" data-os="linux">Linux (.AppImage)</a>
+                        </div>
+                        <ul class="install-features">
+                            <li>
+                                <i data-lucide="check"></i>
+                                <span>Recommended for most users</span>
+                            </li>
+                            <li>
+                                <i data-lucide="check"></i>
+                                <span>Code signing & standard system prompts</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="install-card">
+                    <div class="card-header">
+                        <i data-lucide="terminal"></i>
+                        <h3>Python (dev) Install</h3>
+                    </div>
+                    <div class="card-content">
+                        <p>Prefer source? Install requirements and run directly.</p>
+                        <div class="code-block">
+                            <pre><code># Requirements
+Python 3.x
+pip install pyautogui keyboard
+
+# Run
+python autoscribe.py</code></pre>
+                        </div>
+                        <div class="copy-buttons">
+                            <button class="btn btn-secondary copy-btn" data-text="pip install pyautogui keyboard">
+                                <i data-lucide="terminal"></i>
+                                <span>Copy pip install</span>
+                            </button>
+                            <button class="btn btn-secondary copy-btn" data-text="python autoscribe.py">
+                                <i data-lucide="terminal"></i>
+                                <span>Copy run command</span>
+                            </button>
+                        </div>
+                        <div class="github-note">
+                            <i data-lucide="github"></i>
+                            <span>Clone the repo or download the source zip.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="usage" class="usage-section">
+        <div class="container">
+            <h2 class="section-title">Zero to typing in 7 steps</h2>
+            <div class="usage-grid">
+                <div class="usage-card">
+                    <div class="card-header">
+                        <div class="step-icon">
+                            <i data-lucide="play"></i>
+                        </div>
+                        <h3>Launch AutoScribe</h3>
+                    </div>
+                    <p>Open the desktop app.</p>
+                </div>
+                <div class="usage-card">
+                    <div class="card-header">
+                        <div class="step-icon">
+                            <i data-lucide="keyboard"></i>
+                        </div>
+                        <h3>Paste your text</h3>
+                    </div>
+                    <p>Or type directly into the editor.</p>
+                </div>
+                <div class="usage-card">
+                    <div class="card-header">
+                        <div class="step-icon">
+                            <i data-lucide="gauge"></i>
+                        </div>
+                        <h3>Set WPM</h3>
+                    </div>
+                    <p>From 1 to 200 words per minute.</p>
+                </div>
+                <div class="usage-card">
+                    <div class="card-header">
+                        <div class="step-icon">
+                            <i data-lucide="clock"></i>
+                        </div>
+                        <h3>Set countdown</h3>
+                    </div>
+                    <p>Time to switch to your target window.</p>
+                </div>
+                <div class="usage-card">
+                    <div class="card-header">
+                        <div class="step-icon">
+                            <i data-lucide="play"></i>
+                        </div>
+                        <h3>Start (F6)</h3>
+                    </div>
+                    <p>Begin the typing sequence.</p>
+                </div>
+                <div class="usage-card">
+                    <div class="card-header">
+                        <div class="step-icon">
+                            <i data-lucide="mouse-pointer-2"></i>
+                        </div>
+                        <h3>Switch app</h3>
+                    </div>
+                    <p>Focus the window where text should go.</p>
+                </div>
+                <div class="usage-card">
+                    <div class="card-header">
+                        <div class="step-icon">
+                            <i data-lucide="zap"></i>
+                        </div>
+                        <h3>Watch it type</h3>
+                    </div>
+                    <p>Human-like rhythm, real key events.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hotkeys Section -->
+    <section id="hotkeys" class="hotkeys-section">
+        <div class="container">
+            <div class="hotkeys-grid">
+                <div class="hotkeys-card">
+                    <div class="card-header">
+                        <h3>Default Hotkeys</h3>
+                    </div>
+                    <div class="hotkeys-list">
+                        <div class="hotkey-item">
+                            <kbd>F6</kbd>
+                            <span>Start typing</span>
+                        </div>
+                        <div class="hotkey-item">
+                            <kbd>F7</kbd>
+                            <span>Stop typing</span>
+                            <i data-lucide="stop-circle"></i>
+                        </div>
+                        <div class="hotkey-item">
+                            <kbd>F8</kbd>
+                            <span>Pause / Resume</span>
+                            <i data-lucide="pause"></i>
+                        </div>
+                        <p class="hotkeys-note">Hotkeys are customizable in <em>Settings</em>.</p>
+                    </div>
+                </div>
+
+                <div class="safety-card">
+                    <div class="card-header">
+                        <h3>Safety Features</h3>
+                    </div>
+                    <ul class="safety-list">
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Move mouse to any screen corner to force-stop typing</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Global stop hotkey (F7) works at any time</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Configurable start delay for safe window switching</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Pause/Resume (F8) without losing your place</span>
+                        </li>
+                        <li>
+                            <i data-lucide="check"></i>
+                            <span>Run as admin to type into elevated windows</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-card">
+                <div class="cta-glow"></div>
+                <div class="cta-content">
+                    <div class="cta-text">
+                        <h3>Ready to automate your typing?</h3>
+                        <p>Download AutoScribe and reclaim your minutes. Your hands will thank you.</p>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#download" class="btn btn-primary" id="cta-download-btn">
+                            <i data-lucide="download"></i>
+                            <span>Download for Windows</span>
+                        </a>
+                        <a href="#features" class="btn btn-secondary">Explore Features</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i data-lucide="keyboard"></i>
+                    <span>AutoScribe</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#hotkeys">Hotkeys</a>
+                    <a href="#install">Install</a>
+                    <a href="#usage">Usage</a>
+                    <span class="footer-copyright">© <span id="current-year"></span> AutoScribe.</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
