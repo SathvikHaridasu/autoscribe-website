@@ -50,12 +50,12 @@ function updateDownloadButtons(os) {
     const downloads = {
         windows: { 
             label: 'Download', 
-            file: 'https://github.com/SathvikHaridasu/AutoScribe/releases/download/v1.0.1/AutoScribe-v1.0.1-Setup.exe', 
+            file: 'https://github.com/SathvikHaridasu/AutoScribe/releases/download/v1.0.6/AutoScribe-v1.0.6-Setup.exe', 
             note: 'AutoScribe-Setup.exe' 
         },
         mac: { 
             label: 'Download', 
-            file: 'https://github.com/SathvikHaridasu/AutoScribe/releases/download/v1.0.1/AutoScribe-v1.0.1.dmg', 
+            file: 'https://github.com/SathvikHaridasu/AutoScribe/releases/download/v1.0.6/AutoScribe-v1.0.6.dmg', 
             note: 'AutoScribe.dmg' 
         },
         linux: { 
