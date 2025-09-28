@@ -49,7 +49,7 @@ function detectOS() {
 function updateDownloadButtons(os) {
     const downloads = {
         windows: { label: 'Download for Windows', file: '#', note: 'AutoScribe-Setup.exe' },
-        mac: { label: 'Download for macOS', file: '#', note: 'AutoScribe.dmg' },
+        mac: { label: 'Download for macOS', file: 'https://github.com/SathvikHaridasu/AutoScribe/releases/download/v1.0.0/AutoScribe-v1.0.0.dmg', note: 'AutoScribe.dmg' },
         linux: { label: 'Download for Linux', file: '#', note: 'autoscribe.AppImage' }
     };
     
